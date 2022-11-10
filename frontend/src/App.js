@@ -71,7 +71,7 @@ function App() {
 
 
   useEffect(() => {
-    Axios.get("https://bluesky-app.herokuapp.com/countries")
+    Axios.get("https://bluesk-app.herokuapp.com/countries")
       .then((response) => {
         console.log(response.data.data);
         setFilteredData(response.data.data);
@@ -101,7 +101,7 @@ function App() {
   };
   let handleSubmit = async (e) => {  
     e.preventDefault();
-      let query = await Axios.get(`https://bluesky-app.herokuapp.com/country/${countryName}?sYear=${startYear}&eYear=${endYear}&category=${emissionType}`, {
+      let query = await Axios.get(`https://bluesk-app.herokuapp.com/country/${countryName}?sYear=${startYear}&eYear=${endYear}&category=${emissionType}`, {
         
       }).then((resp)=>{
         setFilteredData(resp.data.data);
